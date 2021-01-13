@@ -50,6 +50,16 @@
     <servlet-class>com.borlok.servletpractice.ErrorDemo</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.SessionTrackingDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CookieDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.CookieDemo</servlet-class>
+  </servlet>
+
 <!--  /////////////////////////////////////////////////////////////////-->
 
   <servlet-mapping>
@@ -85,6 +95,16 @@
   <servlet-mapping>
     <servlet-name>ErrorDemo</servlet-name>
     <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <url-pattern>/track</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CookieDemo</servlet-name>
+    <url-pattern>/cookie</url-pattern>
   </servlet-mapping>
 
   <error-page>
