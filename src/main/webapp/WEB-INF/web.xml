@@ -1,0 +1,100 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Simple Servlet practice</display-name>
+
+  <filter>
+    <filter-name>FilterDemo</filter-name>
+    <filter-class>com.borlok.servletpractice.FilterDemo</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>FilterDemo</filter-name>
+    <url-pattern>/filter</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>SimpleServlet</servlet-name>
+    <servlet-class>com.borlok.servletpractice.SimpleServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>StatusCodeDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.StatusCodeDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ServletRequestDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.ServletRequestDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ServletResponseDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.ServletResponseDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.PassingParametersUsingGetMethodDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.PassingParametersUsingPostMethodDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ErrorDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.ErrorDemo</servlet-class>
+  </servlet>
+
+<!--  /////////////////////////////////////////////////////////////////-->
+
+  <servlet-mapping>
+    <servlet-name>SimpleServlet</servlet-name>
+    <url-pattern>/simple</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>StatusCodeDemo</servlet-name>
+    <url-pattern>/status</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ServletRequestDemo</servlet-name>
+    <url-pattern>/request</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ServletResponseDemo</servlet-name>
+    <url-pattern>/response</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+    <url-pattern>/pass</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+    <url-pattern>/passpost</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ErrorDemo</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error</location>
+  </error-page>
+
+  <error-page>
+    <exception-type>java.lang.Error</exception-type>
+    <location>/error</location>
+  </error-page>
+
+</web-app>
