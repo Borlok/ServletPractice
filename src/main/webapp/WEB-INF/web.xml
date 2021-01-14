@@ -60,7 +60,46 @@
     <servlet-class>com.borlok.servletpractice.CookieDemo</servlet-class>
   </servlet>
 
-<!--  /////////////////////////////////////////////////////////////////-->
+  <servlet>
+    <servlet-name>DatabaseDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.DatabaseDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DateTimeDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.DateTimeDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AutoRefreshDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.AutoRefreshDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RedirectDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.RedirectDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PageVisitsCounterDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.PageVisitsCounterDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LocaleDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.LocaleDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.FileUploadDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SendEmailDemo</servlet-name>
+    <servlet-class>com.borlok.servletpractice.SendEmailDemo</servlet-class>
+  </servlet>
+  <!--  /////////////////////////////////////////////////////////////////-->
 
   <servlet-mapping>
     <servlet-name>SimpleServlet</servlet-name>
@@ -105,6 +144,47 @@
   <servlet-mapping>
     <servlet-name>CookieDemo</servlet-name>
     <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>DatabaseDemo</servlet-name>
+    <url-pattern>/database</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DateTimeDemo</servlet-name>
+    <url-pattern>/time</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AutoRefreshDemo</servlet-name>
+    <url-pattern>/auto</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RedirectDemo</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PageVisitsCounterDemo</servlet-name>
+    <url-pattern>/counter</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LocaleDemo</servlet-name>
+    <url-pattern>/locale</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SendEmailDemo</servlet-name>
+    <url-pattern>/email</url-pattern>
   </servlet-mapping>
 
   <error-page>
